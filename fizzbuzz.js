@@ -1,11 +1,15 @@
-for (var i = 1; i < 21; i++) {
-  if (i % 15 == 0) {
-    console.log("Fizz Buzz");
-  } else if (i % 3 == 0) {
-    console.log("Fizz");
-  } else if (i % 5 == 0) {
-    console.log("Buzz");
+function fizzbuzz(number) {
+  //for (let i=1; i<=30 ; i++){
+  if (number % 3 == 0 && number % 5 == 0) {
+    return "FizzBuzz";
+  } else if (number % 3 == 0) {
+    return "Fizz";
+  } else if (number % 5 == 0) {
+    return "Buzz";
   } else {
-    console.log(i);
+    return number;
   }
+  //}
 }
+
+module.exports = fizzbuzz;
